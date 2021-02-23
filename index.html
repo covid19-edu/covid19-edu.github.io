@@ -8,7 +8,7 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <title>Información acerca del Covid-19</title>
 </head>
 
@@ -40,6 +40,7 @@
                         aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
                         aria-label="Toggle navigation">
                         <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                        
                     </button>
                     <div id="my-nav" class="collapse navbar-collapse">
                         <ul class="navbar-nav mx-auto">
@@ -69,55 +70,70 @@
                 </nav>
             </div>
         </div>
-
-        <div class="row ml-0 mr-0">
-            <div class="col-md-6 pr-0">
-                <div class="card">
-                    <img class="card-img" src="assets/images/imagen_1.jpg" alt="">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Coronavirus</p>
-                        <hr />
-                        <h2>Lo que sabemos acerca de la enfermedad</h2>
-                        <a href="article.html" class="btn">LEER MAS</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 pl-0">
-                <div class="card">
-                    <img class="card-img" src="assets/images/CORONA.jpg" alt="">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Sintomas</p>
-                        <hr />
-                        <h2>Principales Sintomas del Covid-19</h2>
-                        <a href="art_sintomas.html" class="btn">LEER MAS</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 pl-0">
-                <div class="card">
-                    <img class="card-img" src="assets/images/casos.png" alt="">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Casos</p>
-                        <hr />
-                        <h2>Conteos de casos hasta el momento</h2>
-                        <a href="art2.html" class="btn">LEER MAS</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 pl-0">
-                <div class="card">
-                    <img class="card-img" src="assets/images/vacuna.jpg" alt="">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>Avances</p>
-                        <hr />
-                        <h2>Avances de una cura</h2>
-                        <a href="art_avances.html" class="btn">LEER MAS</a>
-                    </div>
-                </div>
-            </div>
-            
+        
+        </div>
     </header>
+    <main class="contenido-principal">
+        <img src="assets/images/inc.jfif" alt="" class="contenido-principal__imagen">
+        <div class="contenido-principal__contenedor">
+            <h1 class="contenido-principal__titulo">Informacion del Covid-19 </h1>
+            <p class="contenido-principal__resumen">
+                Esta pagina esta enfocada a la Informacion acerca del Covid-19, como lo puede ser:
+                <ul>
+                    <li>Origen</li>
+                    <li>Vacunacion</li>
+                    <li>Sintomas</li>
+                    <li>Educacion en cuarentena </li>
+                    <li>Conteo de casos hasta el momento</li>
+                    <li>Notivias actualizadas</li>
+                </ul>
+            </p>
+        </div>
+    </main>
+    <div class="carousel">
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img src="assets/images/imagen_1.jpg" alt="Informacion de Covid-19"width="300px"height="150px">
+                    <h3>Coronavirus</h3>
+                    <h2>Lo que sabemos acerca de la enfermedad</h2>
+                    <a href="article.html" class="btn">LEER MAS</a>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/images/CORONA.jpg" alt=""width="300px"height="150px">
+                    <h3>Sintomas</h3>
+                    <h2>Principales Sintomas del Covid-19</h2>
+                    <a href="art_sintomas.html" class="btn">LEER MAS</a>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/images/casos.png" alt=""width="300px"height="150px">
+                    <h3>Casos</h3>
+                    <h2>Conteos de casos hasta el momento</h2>
+                    <a href="art2.html" class="btn">LEER MAS</a>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/images/vacuna.jpg" alt=""width="300px"height="150px">
+                    <h3>Avances</h3>
+                    <h2>Avances de una cura</h2>
+                    <a href="art_avances.html" class="btn">LEER MAS</a>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/images/ORIGEN.png" alt=""width="300px"height="150px">
+                    <h3>Origen</h3>
+                    <h2>Origen de la enfermedad</h2>
+                    <a href="art_origen.html" class="btn">LEER MAS</a>
+                </div>
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+    </div>
+    </div>
     
     <div class="container-fluid video-player">
         <div class="container">
@@ -189,14 +205,15 @@
                         by <a href="https://freehtml5.co/shahala" target="_blank" class="text-center">Tito Bucheli</a>.</p>
                 </div>
             </footer>
-
+   <script src="assets/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/jquery-1.12.0.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.yu2fvl.js"></script>
     <script src="assets/js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    
 </body>
-
 </html>
