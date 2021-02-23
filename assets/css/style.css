@@ -198,7 +198,10 @@ header {
     width: 50%;
     max-width: 550px;
   }
-  
+  .logoimagen{
+    width: auto;
+    height: auto;
+  }
   .contenido-principal__contenedor {
     width: 50%;
   }
