@@ -201,7 +201,9 @@ header {
   .contenido-principal__contenedor {
     width: 50%;
   }
-  
+  .alinear{
+    text-align: justify;
+    }
   .contenido-principal__titulo {
     font-weight: normal;
     font-size: 28px;
