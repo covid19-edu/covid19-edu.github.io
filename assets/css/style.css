@@ -198,10 +198,24 @@ header {
     width: 50%;
     max-width: 550px;
   }
+  
   .logoimagen{
-    width: auto;
-    height: auto;
-  }
+    max-width: 100%;
+    display: inline-block;
+    }
+    /* 2 columnas para tablets */
+    @media (min-width: 420px) {
+    .logoimagen  {
+
+    max-width: 48%;
+    }
+    }
+    /* 4 columnas para grandes dispositivos*/
+    @media (min-width: 760px) {
+    .logoimagen {
+    max-width: 48%;
+    }
+    }
   .contenido-principal__contenedor {
     width: 50%;
   }
